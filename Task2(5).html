@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let person={
+                age:19,
+                increaseAge(amount){
+                    if(amount>0){
+                        this.age+=amount;
+                    }
+                    return this.age;
+                },
+                decreaseAge(amount){
+                    if(amount>0){
+                        this.age-=amount;
+                    }
+                    return this.age;
+                },
+            };
+            console.log(person.increaseAge(5));
+            console.log(person.decreaseAge(2));
+        </script>
+    </body>
+</html>

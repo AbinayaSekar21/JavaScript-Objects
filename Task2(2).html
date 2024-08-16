@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let Book={
+                title:"The Secret",
+                author:"Rhonda Byrne",
+                publishedYear:1999,
+                getSummary(){
+                    return `${this.title} book is written by ${this.author} in ${this.publishedYear}`;
+                },
+                age(){
+                    let curr=new Date().getFullYear();
+                    return curr-this.publishedYear;
+                }
+            };
+            console.log(Book.getSummary());
+            console.log("Age:"+Book.age());
+ </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let Calculator={
+                num1:28,
+                num2:21,
+                history:[],
+                add(){
+                    return this.history.push(this.num1+this.num2);
+                },
+                diff(){
+                    return this.history.push(this.num1-this.num2);
+                },
+                mul(){
+                    return this.history.push(this.num1*this.num2);
+                },
+                div(){
+                    return this.history.push(this.num1/this.num2);
+                },
+                getHistory(){
+                    return this.history;
+                }
+            };
+            Calculator.add();
+            Calculator.diff();
+            Calculator.mul();
+            Calculator.div();
+            console.log(Calculator.getHistory());
+        </script>
+    </body>
+</html>
